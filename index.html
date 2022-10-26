@@ -2,19 +2,19 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../device/css/style.css">
+        <link rel="stylesheet" href=".//css/style.css">
         <title>Интернет магазин Device</title>
     </head>
     <body>
         <header class="header">
             <div>
-                <a class="nav_link" href="#">device</a>
+                <a class="nav_link" href=".//index.html"><img src=".//img/logo-black.png" alt="Логотип надпись device черным цветом"></a>
                 <div>
                     <input type="text" name="search">
                     <input type="button" value="Найти">
                 </div>
                 <ul>
-                    <li><a href="#">Войти</a></li>
+                    <li><a href=".//registration.html">Войти</a></li>
                     <li><a href="#">Сравнить</a></li>
                     <li><a href="#">Корзина</a></li>
                 </ul>                
@@ -29,13 +29,12 @@
             </nav>
         </header>
         <main>
-            <h1>Интернет магазин device</h1>
-            
+            <h1 class="visually-hidden">Интернет магазин device</h1>            
             <section class="slider">
-                <h2>Реклама промо товаров</h2>
+                <h2 class="visually-hidden">Реклама промо товаров</h2>
                 <div class="slider_list">
                     <div class="slider_item">
-                        <img src="#" alt="Самая длинная палка для селфи">
+                        <img src=".//img/content-img/slider-1.png" alt="Три телескопические палки для селфи с мягкой рукояткой. Основной цвет - черный, декоративный цвет - синий">
                         <!-- <p>01</p> Псевдоэлемент-->
                         <p class="slider_item">Делай селфи, как Бен Стиллер!</p>
                         <p class="slider_item">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь Карл!) метров и весом всего 5 килограмм.</p>
@@ -50,7 +49,7 @@
                         </dl>            
                     </div>
                     <div class="slider_item">
-                        <img src="#" alt="фитнес-браслет">
+                        <img src=".//img/content-img/slider-2.png" alt="фитнес-браслет черного цвета, резиновый корпус, поверхность ребристая">
                         <p>02</p>
                         <p class="slider_item">Худеем правильно!</p>
                         <p class="slider_item">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -61,7 +60,7 @@
                         </dl>            
                     </div>
                     <div class="slider_item">
-                        <img src="#" alt="квадрокоптер">
+                        <img src=".//img/content-img/slider-3.png" alt="квадрокоптер белого цвета с лазерной пушкой вместо камеры">
                         <p>03</p>
                         <p class="slider_item">Пархает как бабочка, жалит как пчела!</p>
                         <p class="slider_item">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -76,20 +75,24 @@
                 </div>                
             </section>
             <section>
-                <h2>Популярные товары</h2>
+                <h2 class="visually-hidden">Популярные товары</h2>
                 <div>
                     <ul>
-                        <li><a href="#"><img src="#">Виртуальная реальность</a></li>
-                        <li><a href="#"><img src="#">Моноподы для селфи</a></li>
-                        <li><a href="#"><img src="#">Экшн-камеры</a></li>
-                        <li><a href="#"><img src="#">Фитнес-браслеты</a></li>
-                        <li><a href="#"><img src="#">Умные часы</a></li>
-                        <li><a href="#"><img src="#">Квадрокоптеры</a></li>
+                        <li>
+                            <label>
+                                <a href="#"><img src=".//img/popular-1.svg">Виртуальная реальность</a>
+                            </label>
+                        </li>
+                        <li><a href="#"><img src=".//img/popular-2.svg">Моноподы для селфи</a></li>
+                        <li><a href="#"><img src=".//img/popular-3.svg">Экшн-камеры</a></li>
+                        <li><a href="#"><img src=".//img/popular-4.svg">Фитнес-браслеты</a></li>
+                        <li><a href="#"><img src=".//img/popular-5.svg">Умные часы</a></li>
+                        <li><a href="#"><img src=".//img/poppular-6.svg">Квадрокоптеры</a></li>
                     </ul>                       
                 </div>
             </section>
             <section class="services">
-                <h2>Раздел услуг</h2>
+                <h2 class="visually-hidden">Раздел услуг</h2>
                 <div>
                     <ul>
                         <li><button type="button">Доставка</button></li>
@@ -100,24 +103,27 @@
                 <div class="delivery">
                     <h3>Доставка</h3>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    <img src=".//img/delivery.svg" alt="">
                 </div>
                 <div class="warranty">
                     <h3>Гарантия</h3>
-                    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>                    
+                    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>    
+                    <img src=".//img/warranty.svg" alt="">                
                 </div>
                 <div class="credit"> 
                     <h3>Кредит</h3>
                     <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    <img src=".//img/credit.svg" alt="">
                 </div>
             </section>
             <section class="logotypes">
                 <h2>Логотипы компаний</h2>
             <div class="logotypes">
                 <ul class="logotypes_list">
-                    <li><img src="#" alt="DJI logo"></li>
-                    <li><img src="#" alt="SP-Gadgets logo"></li>
-                    <li><img src="#" alt="GoPro logo"></li>
-                    <li><img src="#" alt="VIVE logo"></li>
+                    <li><a class="logotypes_link" href="#"><img src=".//img/content-img/logo-1.png" alt=""></a></li>
+                    <li><a class="logotypes_link" href="#"><img src=".//img/content-img/logo-2.png" alt=""></a></li>
+                    <li><a class="logotypes_link" href="#"><img src=".//img/content-img/logo-3.png" alt=""></a></li>
+                    <li><a class="logotypes_link" href="#"><img src=".//img/content-img/logo-4.png" alt=""></a></li>
                 </ul>
             </div>
             </section>            
@@ -134,35 +140,35 @@
             </section>
             <section class="contacts">
                 <h2>Контакты</h2>
-                <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                <div id="mapcontainer" class="map">
-                    <img src="#" class="map_img">
-<!-- смотри раздел 4.3 specification-device, доделай, когда изучишь соответствующую тему  -->
- 
+                <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>                
+                <div>
+                    <img src=".//img/map.jpg" width="560" height="222" alt="Наш магазин расположен по адресу г. Москва, ул. Строителей, д.15">
                 </div>
+<!-- смотри раздел 4.3 specification-device, доделай, когда изучишь соответствующую тему  -->
                 <button type="button">Напишите наш</button>
                 <div class="modalwindow">
-                    <div class="madalwindow_content">                        
-                        <button type="button"><img src=".//img/menu-close.svg"></button>
-                        <div>
-                            <p>Ваше имя:</p>
-                            <input type="text" name="username" placeholder="Имя Фамилия">                            
+                    <button type="button"><img src=".//img/modal-close.svg"></button>
+                    <form class="write-us" method="post" action="#">
+                        <div class="div_user-name">
+                            <label for="user-name">Ваше имя:</label>
+                            <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
                         </div>
-                        <div>
-                            <p>Ваш e-mail:</p>
-                            <input type="email" name="email" placeholder="email@example.com"> 
+                        <div class="div_email">
+                            <label for="email">Ваш e-mail:</label>
+                            <input id="email" type="email" name="user-email" placeholder="email@example.com">
                         </div>
-                        <div>
-                            <p>Текст письма:</p>
-                            <input type="text" name="text" placeholder="В свободной форме">
+                        <div class="div_text">
+                            <label for="text">Текст письма:</label>
+                            <textarea id="text" name="user-text" placeholder="В свободной форме"></textarea>
                         </div>
-                    </div>
+                        <button type="submit">Отправить</button>                            
+                    </form>
                 </div>                
             </section>                    
         </main>
         <footer>
             <div>
-                <p>DEVICE</p>
+                <a class=device_yellow href=".//index.html"><img src=".//img/logo-yellow-png.png" alt="Логотип надпись divice желтым цветом"></a>
                 <p>г. Москва, ул.Строителей, 15</p>
                 <div>желтая полоска</div>                
             </div>
