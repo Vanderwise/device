@@ -2,7 +2,8 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheey" href="device-catalog.css">
+        <link rel="stylesheet" href=".//css/normalize.css">
+        <link rel="stylesheet" href=".//css/device-catalog.css">
         <title>Интернет магазин Device. Каталог товаров</title>
     </head>
     <body>
@@ -11,8 +12,10 @@
                 <a class="nav_link" href=".//index.html"><img src=".//img/logo-black.png" alt="Logo device"></a>
                 <div>
                     <img src=".//img/search.svg">
-                    <input type="text" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-                    <input type="button" value="Найти">
+                    <label class="visually-hidden" for="input-search">Поиск по сайту</label>
+                    <input type="text" name="search" id="input-search" placeholder="Поиск по сайту">                 
+                    <!-- <input type="button" value="Найти">
+                    Это не кнопка, а ссылка. Исправить после соответствующей лекции -->
                 </div>
                 <ul>
                     <li><a href="#"><img src=".//img/user.svg" alt="">Валентин Петухов</a></li>                     
@@ -30,7 +33,7 @@
                     <li class="#"><a href="#">Гарантия</a></li>
                     <li class="#"><a href="#">Контакты</a></li>
                 </ul>
-                <div class="catalog_menu">
+                <div class="dropdown-menu">
                     <ul>
                         <li><a href="#">Виртуальная реальность</a></li>
                         <li><a href="#">Моноподы для селфи</a></li>
@@ -67,28 +70,28 @@
             <div class="content">
                 <ul>
                     <li>
-                        <img src=".//img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                        <span tabindex="0"><img src=".//img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380"></span>
                         <a href="#"><h3>Любительская селфи-палка</h3></a>
                         <p>500 руб.</p>
                         <button type="button">в корзину</button>
                         <button type="button">Добавить к сравнению</button>
                     </li>
                     <li>
-                        <img src=".//img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                        <span tabindex="0"><img src=".//img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380"></span>
                         <a href="#"><h3>Профессиональная селфи-палка</h3></a>
                         <p>1500 руб.</p>
                         <button type="button">в корзину</button>
                         <button type="button">Добавить к сравнению</button>
                     </li>
                     <li>
-                        <img src=".//img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                        <span tabindex="0"><img src=".//img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380"></span>
                         <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
                         <p>2500 руб.</p>
                         <button type="button">в корзину</button>
                         <button type="button">Добавить к сравнению</button>
                     </li>
                     <li>
-                        <img src=".//img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                        <span tabindex="0"><img src=".//img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380"></span>
                         <a href="#"><h3>Селфи-палка «Следуй за мной»</h3></a>
                         <p>4900 руб.</p>
                         <button type="button">в корзину</button>
@@ -168,10 +171,10 @@
                     <li class="#"><a href="#">Гарантия</a></li>
                     <li class="#"><a href="#">Контакты</a></li>
                 </ul>
-                <ul class="social-networks_list">
-                    <li class="visually-hidden"><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li class="visually-hidden"><a href="https://www.instagram.com/">Instagram</a></li>
-                    <li class="visually-hidden"><a href="https://twitter.com/">Twitter</a></li>
+                <ul class="socials">
+                    <li class="#"><a href="https://www.facebook.com/"><img src=".//img/fb.svg" alt="Facebook"></a></li>
+                    <li class="#"><a href="https://www.instagram.com/"><img src=".//img/instagram.svg" alt="Instagram"></a></li>
+                    <li class="#"><a href="https://twitter.com/"><img src=".//img/twitter.svg" alt="Twitter"></a></li>
                 </ul>
             </div>
             <div>
