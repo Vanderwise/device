@@ -163,8 +163,15 @@ footer {
 .user-buttons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 50%;
     margin-left: 20px;
+}
+.user-buttons li:first-child {
+    margin-right: auto;
+}
+.user-buttons li:nth-child(2) {
+    margin-right: 35px;
 }
 .user-buttons a {
     position: relative;
@@ -179,7 +186,6 @@ footer {
 }
 .button-compare {
     padding-left: 20px;
-    margin-left: 195px;
 }
 .button-compare::before {   
     content: url(.//img/compare.svg); 
@@ -206,7 +212,6 @@ footer {
     align-items: center;
     justify-content: flex-start;
     width: auto;
-    /* margin-bottom: 40px; */
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -230,8 +235,8 @@ footer {
     margin-right: 35px;
     margin-left: 20px;
 }
-.nav-contacts {
-    margin-left: auto;
+.nav-warranty {
+    margin-right: auto;
 }
 .nav-catalog-link {
     position: relative;
@@ -678,6 +683,12 @@ footer div {
 .footer-services {
     margin-bottom: 70px;
 }
+.footer-user-buttons li:nth-child(1){
+    margin-right: 43px;
+}
+.footer-user-buttons li:nth-child(2){
+    margin-right: 37px;
+}
 .footer-user-buttons a {
     position: relative;
     font-family: 'Opensanslight', serif;
@@ -702,7 +713,6 @@ footer div {
 }
 .footer-button-compare {
     padding-left: 20px;
-    margin-left: 43px;
 }
 .footer-button-compare::before {
     content: url(.//img/compare-yellow.png);
@@ -712,7 +722,6 @@ footer div {
 }
 .footer-button-basket {
     padding-left: 24px;
-    margin-left: 37px;
 }
 .footer-button-basket::before {
     content: url(.//img/cart-yellow.png);
@@ -730,6 +739,7 @@ footer div {
 }
 .list-services {
     display: flex;
+    flex-wrap: wrap;
 }
 .list-services li:nth-child(2) {
     margin-left: 37px;
