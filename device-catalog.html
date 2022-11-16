@@ -13,7 +13,7 @@
                 <div class="search-container">                    
                     <label class="visually-hidden" for="input-search">Поиск по сайту</label>
                     <input class="input-search" type="text" name="search" id="input-search" placeholder="Поиск по сайту">                                    
-                    <button class="button-search">Найти</button>
+                    <button class="button-search" type="button">Найти</button>
                 </div>
                 <ul class="user-buttons">
                     <li><a class="user" href="#">Валентин Петухов</a></li>                     
@@ -57,34 +57,16 @@
                 <div class="sorting">
                     <h2>Сортировка:</h2>
                     <ul class="sorting-style">
-                        <li>
-                            <label for="price">
-                                <input type="radio" name="content" value="price" id="price" checked>
-                                По цене
-                            </label>
-                        </li>
-                        <li>
-                            <label for="bytype">
-                                <input type="radio" name="content" value="type" id="bytype">
-                                По типу
-                            </label>
-                        </li>
-                        <li>
-                            <label for="popularity">
-                                <input type="radio" name="content" value="popularity" id="popularity">
-                                По популярности
-                            </label>
-                        </li>
+                        <li><a href="#">По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По популярности</a></li>
+                    </ul>  
                     <ul class="sorting-direction">
                         <li>
-                            <label for="sorting-up">
-                                <input type="radio" name="sorting-direction" value="up">
-                            </label>
+                            <button class="sorting-up" type="button"></button>
                         </li>
                         <li>
-                            <label for="sording-down">
-                                <input type="radio" name="sorting-direction" value="down" checked>
-                            </label>
+                            <button class="sorting-down" type="button"></button>
                         </li>
                     </ul>
                 </div>
@@ -140,7 +122,7 @@
                 <div class="content-pages">
                     <a class="page-back" href="#">назад</a>
                     <ul>
-                        <li>1</li>
+                        <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                     </ul>
@@ -230,3 +212,4 @@
         </footer>
     </body>
 </html>
+
