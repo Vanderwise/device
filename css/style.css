@@ -38,8 +38,7 @@ body {
     font-size: 16px;
     line-height: 24px;    
     color: #000000;
-    /* background-image: url(./img/device-index.jpg); */
-    background-repeat: no-repeat;
+    
 }    
 a {
     text-decoration: none;
@@ -72,7 +71,6 @@ footer {
 .header {
     position: relative;
     max-width: 1160px;
-    height: auto;
     background-color: #f7e296;
     margin-top: 40px;
     margin-left: auto;
@@ -120,7 +118,7 @@ footer {
     z-index: 10;
 }
 .input-search {  
-    height: 49px; 
+    min-height: 49px; 
     width: 315px;
     padding-left: 36px; 
     opacity: 30%;
