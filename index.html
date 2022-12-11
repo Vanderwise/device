@@ -201,36 +201,47 @@
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a class="section-info-button" href="#">Подробнее о нас</a>                                       
+                    <a class="aboutus-button" href="#">Подробнее о нас</a>                                       
                 </div>
                 <div class="contacts">
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>                
                     <div class="contacts-map">
                         <img src=".//img/map.jpg" width="560" height="222" alt="Наш магазин расположен по адресу г. Москва, ул. Строителей, д.15">
-                    </div>
-    <!-- смотри раздел 4.3 specification-device, доделай, когда изучишь соответствующую тему  -->
-                    <a class="section-info-button" href="#">Напишите нам</a>
-                
-                    
-                    <!-- <div class="modalwindow">
-                        <button type="button"><img src=".//img/modal-close.svg"></button>
-                        <form class="write-us" method="post" action="#">
-                            <div class="div_user-name">
-                                <label for="user-name">Ваше имя:</label>
-                                <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-                            </div>
-                            <div class="div_email">
-                                <label for="email">Ваш e-mail:</label>
-                                <input id="email" type="email" name="user-email" placeholder="email@example.com">
-                            </div>
-                            <div class="div_text">
-                                <label for="text">Текст письма:</label>
-                                <textarea id="text" name="user-text" placeholder="В свободной форме"></textarea>
-                            </div>
-                            <button type="submit">Отправить</button>                            
-                        </form>
-                    </div>                 -->
+                    </div>    
+                    <a class="writeus-button" href="#">Напишите нам</a>
+                    <section class="modal-write">
+                        <div class="write-container">
+                            <h2 class="visually-hidden">Напишите нам</h2>
+                            <button type="button" class="write-close"><img src=".//img/modal-close.svg"></button>
+                            <span class="visually-hidden">Закрыть</span>
+                            <form class="write-us" method="post" action="#">
+                                <div class="div-user-name">
+                                    <label for="user-name">Ваше имя:</label>
+                                    <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+                                </div>
+                                <div class="div-email">
+                                    <label for="email">Ваш e-mail:</label>
+                                    <input id="email" type="email" name="user-email" placeholder="email@example.com" required>
+                                </div>
+                                <div class="div-text">
+                                    <label for="text">Текст письма:</label>
+                                    <textarea id="text" name="user-text" rows="7" placeholder="В свободной форме"></textarea>
+                                </div>
+                                <button type="submit" class="modal-button">Отправить</button>                            
+                            </form>
+                        </div>
+                    </section>
+                    <section class="modal-map">
+                        <div class="map-container">
+                            <h2 class="visually-hidden">Как до нас добраться</h2>
+                            <button type="button" class="map-close"><img src=".//img/modal-close.svg"></button>
+                            <span class="visually-hidden">Закрыть</span>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.36609285998!2d37.526518254231924!3d55.68711534738588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2s!4v1670683988698!5m2!1sru!2s" width="960" height="559" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <!-- <img src=".//img/map-big.jpg.png" width="960px" height="559px" alt="Наш магазин расположен по адресу г. Москва, ул. Строителей, д.15"> -->
+                        </div>
+                        
+                    </section>
                 </div>             
             </section>
         </main>
@@ -263,5 +274,6 @@
                 </div>
             </div>            
         </footer>
+        <script src=".//index.js"></script>
     </body>    
 </html>

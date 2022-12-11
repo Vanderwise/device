@@ -612,7 +612,7 @@ p.content-description {
     width: 560px;
     height: 222px;
 }
-.section-info-button {
+.aboutus-button {
     display: flex;
     align-items: center;
     justify-content: center ;
@@ -629,7 +629,7 @@ p.content-description {
     border: none;
     background: linear-gradient(to top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);  
 }
-.section-info-button:hover {    
+.aboutus-button:hover {    
     background-color: #f0c52e;    
 }
 .about-us h2,
@@ -650,6 +650,189 @@ p.content-description {
     font-size: 16px;
     line-height: 40px;
 }
+.writeus-button {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 260px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 72px;   
+    font-family: 'Gilroyextrabold', 'Opensans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);  
+}
+.writeus-button:hover {    
+    background-color: #f0c52e;    
+}
+/* MODAL WINDOW */
+
+.modal-write {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.write-container {
+    position: fixed;
+    width: 960px;
+    padding: 90px 100px 90px 100px;
+    margin-left: -480px;
+    margin-top: -285px;
+
+    top: 50%;
+    left: 50%;
+
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+    z-index: 10;
+}
+.form-show {
+    display: block;
+}
+.write-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.write-close:hover {
+    opacity: 1;
+}
+.write-close:active {
+    opacity: 0.3;
+}
+.write-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+.write-us input,
+.write-us textarea {
+    border: none;
+    padding: 14px 0 14px 20px;
+
+    font-family:  'Opensans', 'Opensanslight', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: #f2f2f2;
+}
+.write-us input:hover,
+.write-us textarea:hover {
+    background-color: #eaeaea;
+}
+.write-us input:focus,
+.write-us textarea:focus {
+    outline: 3px solid #f7e296;
+    background-color: #ffffff;
+}
+.write-us label {
+    margin-bottom: 10px;
+}
+.div-user-name {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+.div-email {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.div-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+    
+    width: 100%;
+}
+.modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 260px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 45px;   
+    font-family: 'Gilroyextrabold', 'Opensans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);  
+}
+.modal-button:hover {
+    background-color: #f0c52e;
+}
+.modal-map {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.map-container {
+    position: fixed;
+    width: 960px;
+    height: 559px;
+
+    margin-top: -280px;
+    margin-left: -480px;
+
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+    background-image: url(.//img/map-big.jpg.png);
+}
+.map-show {
+    display: block;
+}
+.map-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.map-close:hover {
+    opacity: 1;
+}
+.map-close:active {
+    opacity: 0.3;
+}
+
+/* FOOTER */
 
 footer div {
     display: flex;
@@ -788,6 +971,5 @@ footer div {
 }
 .academy:active {
     opacity: 0.3;
-    
 }
 
