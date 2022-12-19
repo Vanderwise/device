@@ -9,6 +9,9 @@ close.addEventListener("click", function () {
     modalMap.classList.remove("map-show");
 });
 window.addEventListener("keydown", function(evt) {
-    evt.preventDefault();
-    modalMap.classList.remove("map-show");
-});           
+    if (evt.keyCode === 27) {
+       if(modalMap.classList.contains("map-show")) {
+        modalMap.classList.remove("map-show")
+       };
+    }
+});

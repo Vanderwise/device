@@ -11,8 +11,7 @@ writeUsButton.addEventListener("click", function(evt) {
     modalForm.classList.add("form-show");
     fio.focus();
 });
-formClose.addEventListener("click", function(evt) {
-    evt.preventDefault();
+formClose.addEventListener("click", function() {
     modalForm.classList.remove("form-show");
 });
 form.addEventListener("submit", function(evt) {
@@ -24,9 +23,9 @@ form.addEventListener("submit", function(evt) {
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         if (modalForm.classList.contains("form-show")) {
-            evt.preventDefault();
             modalForm.classList.remove("form-show");
         }
     }
 }); 
+
            
