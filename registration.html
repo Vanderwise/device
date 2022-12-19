@@ -2,30 +2,30 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">  
-        <link rel="stylesheet" href="#">  
+        <link rel="stylesheet" href=".//css/registration.css">  
         <title>Регистрация пользователя</title>
     </head>
     <body>
         <header>
-            <a class="nav_link" href=".//index.html"><img src=".//img/logo-black.png" alt="Логотип надпись device черным цветом"></a>
+            <a class="nav-link" href=".//index.html"><img src=".//img/logo-black.png" alt="Логотип надпись device черным цветом"></a>
         </header>
         <main>
-            <h1>Регстрация на сайте device</h1>
-            <form class="form" method="post" action="#">
-                <p>
-                    <label for="user-login">Логин</label>
-                    <input id="user-login" type="text" name="login" placeholder="Логин">
-                </p>
-                <p>
-                    <label for="password">Пароль</label>
-                    <input id="password" type="password" name="password"placeholder=Пароль>
-                </p>                
-                <label>
-                    <input type="checkbox" name="remember">
-                    Запомнить меня 
-                </label>
-                <button type="submit">Войти</button>
-            </form>
+            <div class="container">
+                <h1>Регстрация на сайте device</h1>
+                <form class="form" method="post" action="#">
+                    <p>
+                        <label class="visually-hidden" for="user-login">Логин</label>
+                        <input class="input-login" id="user-login" type="text" name="login" placeholder="Логин">
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="password">Пароль</label>
+                        <input class="input-password" id="password" type="password" name="password"placeholder=Пароль>
+                    </p>                
+                    <input class="rememberme" id="remember" type="checkbox" name="remember">
+                    <label class="check" for="remember">Запомнить меня</label>
+                    <button class="submit-button" type="submit">Войти</button>
+                </form>
+            </div>
         </main>
     </body>
 </html>
